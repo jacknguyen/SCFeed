@@ -1,0 +1,7 @@
+<h1><%= @user %></h1>
+
+<ol>
+  <% @tweets.each do |tweet| %>
+    <li><%= tweet.created_at %>: <%= tweet.text %></li>
+  <% end %>
+</ol>
